@@ -1,0 +1,27 @@
+body{
+    background-color: tomato;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#logo{
+    color: darkviolet;
+    text-align: center;
+}
+
+.post{
+    background-color: darkgray;
+    padding: 20px ;
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.sub-title{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.logo{
+    border: 2px solid black;
+    border-radius: 50%;
+}
