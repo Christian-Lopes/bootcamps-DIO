@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - align-item</title>
+    <style>
+      .flex-container {
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+      }
+
+      h1 {
+        background-color: purple;
+        text-align: center;
+        color: white;
+      }
+
+      h3 {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      .flex-item {
+        background-color: purple;
+        margin: 5px;
+        color: white;
+        text-align: center;
+        flex: 1;
+      }
+
+      .center {
+        align-items: center;
+      }
+
+      .stretch {
+        align-items: stretch;
+      }
+
+      .flex-start {
+        align-items: flex-start;
+      }
+
+      .flex-end {
+        align-items: flex-end;
+      }
+
+      .baseline {
+        align-items: baseline;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .central {
+          height: 700px;
+        justify-content: center;
+      }
+
+      .central .flex-item{
+          flex: 0;
+          padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ROW</h1>
+
+    <h3>center</h3>
+    <section class="flex-container center">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5<</div>
+    </section>
+
+    <h3>stretch</h3>
+    <section class="flex-container stretch">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>flex-start</h3>
+    <section class="flex-container flex-start">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>flex-end</h3>
+    <section class="flex-container flex-end">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>baseline</h3>
+    <section class="flex-container baseline">
+      <div class="flex-item"><br />Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h1>COLUMN</h1>
+
+    <h3>center</h3>
+    <section class="flex-container center column">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5<</div>
+    </section>
+
+    <h3>stretch</h3>
+    <section class="flex-container stretch column">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>flex-start</h3>
+    <section class="flex-container flex-start column">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>flex-end</h3>
+    <section class="flex-container flex-end column">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>baseline</h3>
+    <section class="flex-container baseline column">
+      <div class="flex-item"><br />Item 1</div>
+      <div class="flex-item">Lorem inpusm dolor sit amet</div>
+      <div class="flex-item">Item 3. Fomos práticas CSS e HTML5</div>
+    </section>
+
+    <h3>alinhamento central à div</h3>
+    <section class="flex-container central center">
+      <div class="flex-item">
+        Em linguística, a noção de texto é ampla e ainda aberta a uma definição
+        mais precisa. Grosso modo, pode ser entendido como manifestação
+        linguística das ideias de um autor, que serão interpretadas pelo leitor
+        de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é
+        variável.
+      </div>
+    </section>
+  </body>
+</html>
