@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - align-contend</title>
+
+    <style>
+      body {
+        background-color: dimgray;
+      }
+
+      h3 {
+        background-color: purple;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 15px;
+        border: 1px solid black;
+      }
+      .flex-container {
+        background-color: cornsilk;
+        height: 400px;
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+      }
+
+      .flex-item {
+        background-color: tomato;
+        padding: 0 5px;
+        margin: 2px;
+        flex: 1;
+        text-align: center;
+        color: white;
+      }
+
+      .stretch {
+        align-content: stretch;
+      }
+
+      .center {
+        align-content: center;
+      }
+
+      .flex-start {
+        align-content: flex-start;
+      }
+
+      .flex-end {
+        align-content: flex-end;
+      }
+
+      .space-around {
+        align-content: space-around;
+      }
+
+      .space-between {
+        align-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>stretch</h3>
+    <div class="flex-container stretch">
+      <div class="flex-item">1 - Em linguística, a noção</div>
+      <div class="flex-item">2 - Em linguística,</div>
+      <div class="flex-item">3 - Em linguística, a noção absoluta</div>
+      <div class="flex-item">4 - Em linguística, a noção</div>
+      <div class="flex-item">
+        5 - Em linguística, a noção disso é muito importante para o
+        desenvolvimento.
+      </div>
+      <div class="flex-item">6 - Em linguística, a noção</div>
+      <div class="flex-item">7 - Em linguística, a noção</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="flex-container center">
+      <div class="flex-item">1 - Em linguística, a noção</div>
+      <div class="flex-item">2 - Em linguística,</div>
+      <div class="flex-item">3 - Em linguística, a noção absoluta</div>
+      <div class="flex-item">4 - Em linguística, a noção</div>
+      <div class="flex-item">
+        5 - Em linguística, a noção disso é muito importante para o
+        desenvolvimento.
+      </div>
+      <div class="flex-item">6 - Em linguística, a noção</div>
+      <div class="flex-item">7 - Em linguística, a noção</div>
+    </div>
+
+    <h3>flex-start</h3>
+    <div class="flex-container flex-start">
+      <div class="flex-item">1 - Em linguística, a noção</div>
+      <div class="flex-item">2 - Em linguística,</div>
+      <div class="flex-item">3 - Em linguística, a noção absoluta</div>
+      <div class="flex-item">4 - Em linguística, a noção</div>
+      <div class="flex-item">
+        5 - Em linguística, a noção disso é muito importante para o
+        desenvolvimento.
+      </div>
+      <div class="flex-item">6 - Em linguística, a noção</div>
+      <div class="flex-item">7 - Em linguística, a noção</div>
+    </div>
+
+    <h3>flex-end</h3>
+    <div class="flex-container flex-end">
+      <div class="flex-item">1 - Em linguística, a noção</div>
+      <div class="flex-item">2 - Em linguística,</div>
+      <div class="flex-item">3 - Em linguística, a noção absoluta</div>
+      <div class="flex-item">4 - Em linguística, a noção</div>
+      <div class="flex-item">
+        5 - Em linguística, a noção disso é muito importante para o
+        desenvolvimento.
+      </div>
+      <div class="flex-item">6 - Em linguística, a noção</div>
+      <div class="flex-item">7 - Em linguística, a noção</div>
+    </div>
+
+    <h3>space-around</h3>
+    <div class="flex-container space-around">
+      <div class="flex-item">1 - Em linguística, a noção</div>
+      <div class="flex-item">2 - Em linguística,</div>
+      <div class="flex-item">3 - Em linguística, a noção absoluta</div>
+      <div class="flex-item">4 - Em linguística, a noção</div>
+      <div class="flex-item">
+        5 - Em linguística, a noção disso é muito importante para o
+        desenvolvimento.
+      </div>
+      <div class="flex-item">6 - Em linguística, a noção</div>
+      <div class="flex-item">7 - Em linguística, a noção</div>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="flex-container space-between">
+      <div class="flex-item">1 - Em linguística, a noção</div>
+      <div class="flex-item">2 - Em linguística,</div>
+      <div class="flex-item">3 - Em linguística, a noção absoluta</div>
+      <div class="flex-item">4 - Em linguística, a noção</div>
+      <div class="flex-item">
+        5 - Em linguística, a noção disso é muito importante para o
+        desenvolvimento.
+      </div>
+      <div class="flex-item">6 - Em linguística, a noção</div>
+      <div class="flex-item">7 - Em linguística, a noção</div>
+    </div>
+  </body>
+</html>
