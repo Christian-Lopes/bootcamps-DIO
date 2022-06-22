@@ -17,3 +17,5 @@ let teste = '';
 
 console.log(trocar(numeros));
 console.log(trocar(teste));
+let nome = 'Christian';
+ nome.le
