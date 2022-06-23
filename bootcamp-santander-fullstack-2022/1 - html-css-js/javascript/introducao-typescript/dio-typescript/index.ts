@@ -59,3 +59,11 @@ input.addEventListener('input', (event) => {
    const i =event.currentTarget as HTMLInputElement;
    console.log(i.value);
 })
+
+//Generic types
+
+function adicionarLista<T>(array: any[], valor: T){
+    return array.map(item => item + valor);
+}
+
+adicionarLista([1, 2, 4], 9);
