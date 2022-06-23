@@ -101,3 +101,29 @@ function user(person: IPerson) {
     //executar código
   }
 }
+
+//Criando variáveis com propriedade readonly e private
+
+interface ICachorro {
+  nome: string;
+  idade: number;
+  parqueFavorito?: string;
+}
+
+type DogSomenteLeitura = {
+  +readonly [K in keyof ICachorro]-?: ICachorro[K];
+};
+
+class MyDog implements DogSomenteLeitura {
+  nome: string;
+  idade: number;
+  parqueFavorito: string;
+
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+}
+
+const cao = new MyDog("Amorinha", 4);
+console.log(cao);
