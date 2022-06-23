@@ -87,3 +87,17 @@ function redirecione(usuario: IUsuario | IAdmin) {
 
   //redirecionar para área do user
 }
+
+//Utilizando o caracter "?" para variáveis opcionais
+
+interface IPerson {
+  id: number;
+  name: string;
+  cargo?: "mecânico" | "vendedor" | "gerente";
+}
+
+function user(person: IPerson) {
+  if (person.cargo) {
+    //executar código
+  }
+}
