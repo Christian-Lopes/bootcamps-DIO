@@ -119,11 +119,30 @@ class MyDog implements DogSomenteLeitura {
   idade: number;
   parqueFavorito: string;
 
-  constructor(nome, idade) {
+  constructor(nome: string, idade: number, parqueFavorito: string) {
     this.nome = nome;
     this.idade = idade;
+    this.parqueFavorito = parqueFavorito;
   }
 }
 
-const cao = new MyDog("Amorinha", 4);
+const cao = new MyDog("Amorinha", 4, "city park");
 console.log(cao);
+
+//Como importar bibliotecas com typescript
+
+import $ from "jquery";
+
+$.fn.extend({
+  novaFuncao() {
+    console.log("Chamou nova função");
+  },
+});
+
+$("body").novaFuncao();
+
+//importando uma função
+
+import { soma as soma1 } from "./functions";
+
+console.log(soma1(2, 7));
