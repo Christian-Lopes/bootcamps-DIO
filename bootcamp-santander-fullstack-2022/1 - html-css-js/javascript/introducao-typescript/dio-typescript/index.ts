@@ -146,3 +146,21 @@ $("body").novaFuncao();
 import { soma as soma1 } from "./functions";
 
 console.log(soma1(2, 7));
+
+//Exemplo de como usar Omit e conclusão do curso
+
+interface IPessoa{
+    nome: string;
+    idade: number;
+    nacionalidade: string;
+}
+
+interface IBrasileiro extends Omit<IPessoa, 'nacionalidade'>{
+
+}
+
+const brasileiro: IBrasileiro = {
+    nome: 'Christian',
+    idade: 20
+}
+console.log(brasileiro);
