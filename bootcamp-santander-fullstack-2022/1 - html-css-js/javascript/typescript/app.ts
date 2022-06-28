@@ -117,12 +117,23 @@ function soma2(number1: number, number2: number): number {
 
 console.log(soma2(2, 4));
 
-console.log(
-  "******************** Retorno de função do tipo void *****************"
-);
+console.log("*************** Retorno de função do tipo void **************");
 
 function print(number1: number, number2: number): void {
   console.log(number1 + number2);
 }
 
 print(3, 6);
+
+console.log("********************* Função callback ************************");
+
+function calc(number1: number, number2: number, callback: (dobro: number) => number): number{
+  let soma = number1 + number2;
+  return callback(soma);
+}
+
+function dobro(number1: number): number{
+  return number1 * number1;
+}
+
+console.log(calc(4, 5, dobro));
