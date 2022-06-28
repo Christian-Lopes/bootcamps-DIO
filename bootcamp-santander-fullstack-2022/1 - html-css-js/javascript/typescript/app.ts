@@ -91,7 +91,7 @@ console.log("Variável definido como number: ", numero);
 
 const number1 = document.getElementById("number1") as HTMLInputElement;
 const number2 = document.getElementById("number2") as HTMLInputElement;
-const soma: any = document.getElementById("soma");
+let soma: any = document.getElementById("soma");
 
 function somar(number1: number | string, number2: number | string) {
   if (typeof number1 === "string" && typeof number2 === "string") {
@@ -100,7 +100,7 @@ function somar(number1: number | string, number2: number | string) {
     return Number(number1) + Number(number2);
   }
 }
-console.log('*************************************');
+console.log("*************************************");
 console.log(soma);
 
 if (soma) {
@@ -108,3 +108,11 @@ if (soma) {
     console.log(somar(number1.value, number2.value));
   });
 }
+
+console.log("******************** Retorno de function *****************");
+
+function soma2(number1: number, number2: number): number{
+  return number1 + number2;
+}
+
+console.log(soma2(2, 4));
