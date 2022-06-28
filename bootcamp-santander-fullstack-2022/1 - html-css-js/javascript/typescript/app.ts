@@ -111,8 +111,18 @@ if (soma) {
 
 console.log("******************** Retorno de function *****************");
 
-function soma2(number1: number, number2: number): number{
+function soma2(number1: number, number2: number): number {
   return number1 + number2;
 }
 
 console.log(soma2(2, 4));
+
+console.log(
+  "******************** Retorno de função do tipo void *****************"
+);
+
+function print(number1: number, number2: number): void {
+  console.log(number1 + number2);
+}
+
+print(3, 6);

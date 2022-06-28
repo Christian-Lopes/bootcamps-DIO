@@ -81,3 +81,8 @@ function soma2(number1, number2) {
     return number1 + number2;
 }
 console.log(soma2(2, 4));
+console.log("******************** Retorno de função do tipo void *****************");
+function print(number1, number2) {
+    console.log(number1 + number2);
+}
+print(3, 6);
