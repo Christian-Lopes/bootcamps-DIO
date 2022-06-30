@@ -95,3 +95,16 @@ function dobro(number1) {
     return number1 * number1;
 }
 console.log(calc(4, 5, dobro));
+console.log("********************* Variável type unknown ************************");
+let varAny = 'Christian';
+varAny = 3;
+varAny = true;
+//A variavel string recebe a varável
+let varNome = varAny;
+let varNomeUnknown;
+let varUnkown = 'Christian';
+//Para atribuir o dado tem de passar por uma validação
+//varUnkown = varNomeUnknown;
+if (typeof varUnkown === 'string') {
+    varNomeUnknown = varUnkown;
+}

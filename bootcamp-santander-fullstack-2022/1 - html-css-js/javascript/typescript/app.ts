@@ -137,3 +137,22 @@ function dobro(number1: number): number{
 }
 
 console.log(calc(4, 5, dobro));
+
+console.log("********************* Variável type unknown ************************");
+
+let varAny: any = 'Christian';
+varAny = 3;
+varAny = true;
+
+//A variavel string recebe a varável
+let varNome: string = varAny;
+
+let varNomeUnknown: string;
+let varUnkown: unknown = 'Christian';
+
+//Para atribuir o dado tem de passar por uma validação
+//varUnkown = varNomeUnknown;
+
+if(typeof varUnkown === 'string'){
+  varNomeUnknown = varUnkown;
+}
