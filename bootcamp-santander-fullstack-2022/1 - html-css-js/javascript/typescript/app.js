@@ -108,3 +108,8 @@ let varUnkown = 'Christian';
 if (typeof varUnkown === 'string') {
     varNomeUnknown = varUnkown;
 }
+console.log("********************* Tipo never e comando throw ************************");
+function error(erro, codigo) {
+    throw { erro: String, codigo: codigo };
+}
+error('Tipo indefinido', 1220);
