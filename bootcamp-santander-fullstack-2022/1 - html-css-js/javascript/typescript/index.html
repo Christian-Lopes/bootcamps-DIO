@@ -5,14 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typescript</title>
+    <style>
+      .container{
+        background-color: blueviolet;
+        color: #fff;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+    </style>
   </head>
   <body>
     <input type="text" id="name" placeholder="Seu nome..." />
     <button id="btn-name">Salvar</button>
     <h2>Soma</h2>
-    <input type="text" id="number1">
-    <input type="text" id="number2">
+    <input type="text" id="number1" />
+    <input type="text" id="number2" />
     <button id="soma">Soma</button>
+
+    <div class="container">
+      <h2>Desafio 03</h2>
+      <h4>Valor a ser adicionado: <input id="somar" /></h4>
+      <button id="atualizar-saldo">Atualizar saldo</button>
+      <button id="limpar-saldo">Limpar seu saldo</button>
+      <h1>"Seu saldo é: " <span id="campo-saldo"></span></h1>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
