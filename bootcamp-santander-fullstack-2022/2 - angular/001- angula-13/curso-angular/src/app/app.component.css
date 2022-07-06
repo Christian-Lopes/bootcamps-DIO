@@ -1,0 +1,14 @@
+nav {
+  background-color: darkmagenta;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
