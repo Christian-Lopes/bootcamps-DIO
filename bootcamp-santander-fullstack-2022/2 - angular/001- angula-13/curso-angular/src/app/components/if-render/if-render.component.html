@@ -1,0 +1,12 @@
+<div class="class">
+  <h1>Renderização condicional</h1>
+  <div *ngIf="canShow === false">
+    Estamos mostrando isso porque foi permitidao!
+  </div>
+
+  <h2 class="name" *ngIf="name === 'Christian'; else nameNotFound">O nome é Christian</h2>
+
+  <ng-template #nameNotFound>
+    <div class="not-found">O nome não foi encontrado!</div>
+  </ng-template>
+</div>

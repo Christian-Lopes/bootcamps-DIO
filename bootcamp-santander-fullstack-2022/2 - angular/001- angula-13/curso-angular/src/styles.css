@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Helvetica;
+}
+
+body {
+  padding-bottom: 500px;
+}
+
+.class {
+  border-bottom: 2px solid purple;
+  padding: 2em;
+  margin-bottom: 1em;
+}

@@ -1,22 +1,5 @@
+<app-nav-bar></app-nav-bar>
 
-<div class="container">
-  {{ title }}
-
-  <br />
-
-  {{ welcome }}
-
-  <hr />
-
-  <input [(ngModel)]="name" name="name" />
-
-  <hr />
-
-  {{ welcome }}
-
-  <hr />
-  {{ name }}
-
-  <app-couser-list></app-couser-list>
-  
+<div class="container mt-4">
+  <router-outlet></router-outlet>
 </div>
