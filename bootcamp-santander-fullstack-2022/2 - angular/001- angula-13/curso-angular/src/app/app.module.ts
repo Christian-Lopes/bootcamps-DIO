@@ -15,6 +15,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
+    ItemDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
